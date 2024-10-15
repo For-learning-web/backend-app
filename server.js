@@ -10,7 +10,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.use(express.static(path.join(__dirname, 'src' ,'public')));
 
-app.get('/', (req , res ) => {
+app.get('/index.html', (req , res ) => {
     res.sendFile(path.join(__dirname, 'src','public','html', 'index.html'));
 })
 
